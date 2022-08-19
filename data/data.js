@@ -40,13 +40,6 @@ export const featuredProjects = [
 
 export const experiences = [
   {
-    company: 'Blue Liquid Designs',
-    role: 'Freelance Developer',
-    duration: 'April 2022 - Present',
-    jobType: ['Full Time'],
-    description: 'Currently learning on this great adventure!',
-  },
-  {
     company: 'Azoo Inc.',
     role: 'Freelance Developer',
     duration: 'June 2021 - April 2022',
