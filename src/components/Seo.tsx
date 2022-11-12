@@ -4,8 +4,7 @@ import { useRouter } from 'next/router';
 const defaultMeta = {
   title: 'eatarranza',
   siteName: 'eatarranza',
-  description:
-    'A collection of my work and my journey as a developer.',
+  description: 'A collection of my work and my journey as a developer.',
   url: 'https://eatarranza.xyz',
   type: 'website',
   robots: 'follow, index',
