@@ -1,6 +1,4 @@
-import * as React from 'react';
-import { useRouter } from 'next/router';
-
+import ThemeButton from '@/components/buttons/ThemeButton';
 import UnstyledLink from '@/components/links/UnstyledLink';
 
 const links = [
@@ -11,7 +9,7 @@ const links = [
 
 export default function Header() {
   return (
-    <header className='sticky top-0 z-50 bg-white'>
+    <header className='sticky top-0 z-50'>
       <div className='layout flex h-14 items-center justify-between'>
         <UnstyledLink href='/' className='font-bold hover:text-gray-600'>
           eatarranza
@@ -25,6 +23,9 @@ export default function Header() {
                 </UnstyledLink>
               </li>
             ))}
+            <li>
+              <ThemeButton />
+            </li>
           </ul>
         </nav>
       </div>

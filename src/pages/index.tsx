@@ -1,16 +1,14 @@
-import * as React from 'react';
 import clsx from 'clsx';
 
 import useLoaded from '@/hooks/useLoaded';
 
-import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 
 export default function IndexPage() {
   const isLoaded = useLoaded();
 
   return (
-    <Layout>
+    <>
       <Seo />
 
       <main>
@@ -20,7 +18,7 @@ export default function IndexPage() {
             isLoaded && 'fade-in-start'
           )}
         >
-          <article>
+          <article className='layout'>
             <h2 className='text-2xl md:text-4xl 2xl:text-5xl' data-fade='1'>
               Hi!
             </h2>
@@ -30,9 +28,19 @@ export default function IndexPage() {
             >
               I am Ezekiel Tarranza
             </h1>
+            <p
+              className={clsx(
+                'mt-4 max-w-4xl md:mt-6',
+                'md:text-lg 2xl:text-xl'
+              )}
+              data-fade='3'
+            >
+              I am a software developer in the Philippines who likes to bring
+              ideas to reality.
+            </p>
           </article>
         </section>
       </main>
-    </Layout>
+    </>
   );
 }

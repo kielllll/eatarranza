@@ -1,5 +1,6 @@
-import Header from '@/components/layout/Header';
 import * as React from 'react';
+
+import Header from '@/components/layout/Header';
 
 import { PreloadProvider } from '@/context/PreloadContext';
 
