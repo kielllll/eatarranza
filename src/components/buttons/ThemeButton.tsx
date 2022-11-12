@@ -6,7 +6,18 @@ import { FiMoon, FiSun } from 'react-icons/fi';
 type ThemeButtonProps = React.ComponentPropsWithoutRef<'button'>;
 
 export default function ThemeButton({ className, ...rest }: ThemeButtonProps) {
+  const [mounted, setMounted] = React.useState<boolean>(false);
   const { theme, setTheme } = useTheme();
+
+  // useEffect only runs on the client, so now we can safely show the UI
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
   return (
     <button
       className={clsx(
