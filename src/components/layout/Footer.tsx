@@ -2,7 +2,6 @@ import * as React from 'react';
 import { SiGithub, SiLinkedin } from 'react-icons/si';
 
 import UnstyledLink from '@/components/links/UnstyledLink';
-import Tooltip from '@/components/Tooltip';
 
 export default function Footer() {
   return (
@@ -22,14 +21,13 @@ const SocialLinks = () => {
   return (
     <div className='mt-2 flex space-x-4'>
       {socials.map((social) => (
-        <Tooltip interactive={false} key={social.href} content={social.text}>
-          <UnstyledLink
-            className='inline-flex items-center justify-center rounded-sm focus:outline-none focus-visible:ring focus-visible:ring-primary-300'
-            href={social.href}
-          >
-            <social.icon className='my-auto h-6 w-6 align-middle text-gray-600 transition-colors hover:text-primary-300 dark:text-gray-300 dark:hover:text-primary-300' />
-          </UnstyledLink>
-        </Tooltip>
+        <UnstyledLink
+          className='inline-flex items-center justify-center rounded-sm focus:outline-none focus-visible:ring focus-visible:ring-primary-300'
+          href={social.href}
+          key={social.href}
+        >
+          <social.icon className='my-auto h-6 w-6 align-middle text-gray-600 transition-colors hover:text-primary-300 dark:text-gray-300 dark:hover:text-primary-300' />
+        </UnstyledLink>
       ))}
     </div>
   );
