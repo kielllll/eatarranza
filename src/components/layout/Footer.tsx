@@ -26,7 +26,7 @@ const SocialLinks = () => {
           href={social.href}
           key={social.href}
         >
-          <social.icon className='my-auto h-6 w-6 align-middle text-gray-600 transition-colors hover:text-primary-300 dark:text-gray-300 dark:hover:text-primary-300' />
+          <social.icon className='my-auto h-6 w-6 align-middle transition-colors hover:text-primary-300' />
         </UnstyledLink>
       ))}
     </div>
