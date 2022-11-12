@@ -4,6 +4,14 @@
 
 This changelog is manually generated and not accurate with the package.json, only to show the changes since the last release.
 
+## 1.0.0 (2022-11-12)
+
+
+### Features
+
+* add themes ([ccf5d01](https://github.com/kielllll/eatarranza/commit/ccf5d01aa1e8a944cd8a7b879a5d43194c6a40fe))
+* setup layout and providers ([358a317](https://github.com/kielllll/eatarranza/commit/358a31718479feaa078aa8f565ca03668b03ab0e))
+
 ## 0.5.4 - 2022-07-22
 
 ### New Features
@@ -410,4 +418,3 @@ Snippets: `reg`
 ```
 
 You should also use [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) extension.
-
