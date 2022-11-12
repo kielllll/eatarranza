@@ -1,13 +1,11 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-// !STARTERCONF Change these default meta
 const defaultMeta = {
   title: 'eatarranza',
   siteName: 'eatarranza',
   description:
     'A collection of my work and my journey as a developer.',
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
   url: 'https://eatarranza.xyz',
   type: 'website',
   robots: 'follow, index',
@@ -32,16 +30,6 @@ export default function Seo(props: SeoProps) {
   meta['title'] = props.templateTitle
     ? `${props.templateTitle} | ${meta.siteName}`
     : meta.title;
-
-  // Use siteName if there is templateTitle
-  // but show full title if there is none
-  // !STARTERCONF Follow config for opengraph, by deploying one on https://github.com/theodorusclarence/og
-  // ? Uncomment code below if you want to use default open graph
-  // meta['image'] = openGraph({
-  //   description: meta.description,
-  //   siteName: props.templateTitle ? meta.siteName : meta.title,
-  //   templateTitle: props.templateTitle,
-  // });
 
   return (
     <Head>
