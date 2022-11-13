@@ -1,3 +1,6 @@
+import clsx from 'clsx';
+import * as React from 'react';
+
 import ThemeButton from '@/components/buttons/ThemeButton';
 import UnstyledLink from '@/components/links/UnstyledLink';
 
@@ -8,9 +11,25 @@ const links = [
 ];
 
 export default function Header() {
+  const [onTop, setOnTop] = React.useState<boolean>(true);
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setOnTop(window.pageYOffset === 0);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header className='sticky top-0 z-50'>
-      <div className='layout flex h-14 items-center justify-between'>
+    <header
+      className={clsx(
+        'sticky top-0 z-50 transition-shadow',
+        !onTop && 'shadow-sm'
+      )}
+    >
+      <div className='layout flex h-14 items-center justify-between bg-white transition-colors dark:bg-semi-dark dark:text-white'>
         <UnstyledLink href='/' className='font-bold hover:text-gray-600'>
           eatarranza
         </UnstyledLink>
