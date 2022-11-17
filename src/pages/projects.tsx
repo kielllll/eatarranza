@@ -18,14 +18,14 @@ export default function ProjectsPage() {
             isLoaded && 'fade-in-start'
           )}
         >
-          <article className='layout'>
+          <div className='layout'>
             <h1
               className='mt-1 text-3xl md:text-5xl 2xl:text-6xl'
               data-fade='2'
             >
               My Projects
             </h1>
-          </article>
+          </div>
         </section>
       </main>
     </>

@@ -2,7 +2,6 @@
 
 A collection of my journey as a developer!
 
-
 ## Tech
 
 - ⚡️ Next.js 13

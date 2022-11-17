@@ -27,6 +27,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
     "react-image-lightbox": "^5.1.4",
+    "react-tippy": "^1.4.0",
     "tailwind-merge": "^1.7.0"
   },
   "devDependencies": {
