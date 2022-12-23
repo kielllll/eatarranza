@@ -42,28 +42,21 @@ const stacks = [
   {
     id: 'react',
     icon: SiReact,
-    tooltip: (
-      <>
-        Create React App, first frontend framework that I learned, great if you
-        are making an authenticated website.
-      </>
-    ),
+    tooltip: <>Create React App, very awesome for SPAs.</>,
   },
   {
     id: 'typescript',
     icon: SiTypescript,
-    tooltip: <>Typescript, because it's Typescript :)</>,
+    tooltip: <>Typescript, because it's Typescript!</>,
   },
   {
     id: 'tailwind',
     icon: SiTailwindcss,
-    tooltip: <>Tailwind CSS, bye bootstrap.</>,
+    tooltip: <>Tailwind CSS, css made awesome and very maintainable.</>,
   },
   {
     id: 'aws',
     icon: SiAmazonaws,
-    tooltip: (
-      <>AWS, the first thing that introduced me to serverless solutions.</>
-    ),
+    tooltip: <>AWS, my choice to serverless solutions.</>,
   },
 ];
