@@ -11,3 +11,8 @@ export type ProjectFrontmatter = {
   github?: string;
   youtube?: string;
 };
+
+export type ProjectType = {
+  code: string;
+  frontmatter: ProjectFrontmatter;
+};
