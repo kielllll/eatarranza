@@ -40,7 +40,7 @@ export default function IndexPage() {
               data-fade='3'
             >
               I am a software developer in the Philippines who likes to bring
-              ideas to reality.
+              ideas into reality.
             </p>
             <div data-fade='5' className='mt-8 md:!text-lg'>
               <ButtonLink href='/about'>Learn more about me</ButtonLink>

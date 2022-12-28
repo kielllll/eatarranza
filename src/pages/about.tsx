@@ -50,6 +50,15 @@ export default function AboutPage() {
                   important thing in here as well is self-learning!
                 </p>
                 <p data-fade='6'>
+                  As a software developer based in the Philippines, I am
+                  passionate about turning ideas into tangible solutions.
+                  Whether it's developing a new application or implementing a
+                  complex system, I enjoy the challenge of bringing concepts to
+                  life through code. I am always looking for ways to grow and
+                  improve my skills, and I thrive on the opportunity to work on
+                  projects that make a meaningful impact.
+                </p>
+                <p data-fade='7'>
                   In this website. You will see my experiences on my career as a
                   developer. In the future, this will also include some blogs
                   which I hope to inspire other to pursue web development as
