@@ -23,9 +23,9 @@ export default function AboutPage() {
             <div className='mt-4' data-fade='2'>
               <CloudinaryImg
                 className='float-right ml-6 w-36 md:w-72'
-                publicId='eatarranza/zeeeeek_uiasc7.jpg'
-                width='1345'
-                height='1611'
+                publicId='eatarranza/zeke_ci0qpb.jpg'
+                width='1350'
+                height='1800'
                 alt='Photo of me'
                 preview={false}
               />
