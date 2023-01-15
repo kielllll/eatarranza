@@ -29,7 +29,7 @@ export default function Header() {
         !onTop && 'shadow-sm'
       )}
     >
-      <div className='layout bg-trasparent flex h-14 items-center justify-between transition-colors dark:text-white'>
+      <div className='layout flex h-14 items-center justify-between bg-white dark:bg-semi-dark dark:text-white'>
         <UnstyledLink href='/' className='font-bold hover:text-gray-600'>
           eatarranza
         </UnstyledLink>

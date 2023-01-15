@@ -10,6 +10,7 @@ type TooltipTextProps = {
   withUnderline?: boolean;
 } & TooltipProps &
   Omit<React.ComponentPropsWithoutRef<'div'>, 'children' | 'className'> &
+  /* eslint-disable  @typescript-eslint/no-explicit-any */
   any;
 
 export default function Tooltip({
