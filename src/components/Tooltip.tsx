@@ -1,3 +1,5 @@
+'use client';
+
 import clsx from 'clsx';
 import * as React from 'react';
 import { Tooltip as TippyTooltip, TooltipProps } from 'react-tippy';

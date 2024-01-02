@@ -1,3 +1,5 @@
+'use client';
+
 import { buildUrl } from 'cloudinary-build-url';
 import clsx from 'clsx';
 import Image from 'next/image';
@@ -101,7 +103,7 @@ export default function CloudinaryImg({
             background-size: 100%;
           }
         `}</style>
-        <div className='absolute top-0 left-0'>
+        <div className='absolute left-0 top-0'>
           <Image
             width={width}
             height={height}

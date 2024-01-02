@@ -42,12 +42,12 @@ const stacks = [
   {
     id: 'react',
     icon: SiReact,
-    tooltip: <>Create React App, very awesome for SPAs.</>,
+    tooltip: <>Vite + React, very awesome for client-side applications.</>,
   },
   {
     id: 'typescript',
     icon: SiTypescript,
-    tooltip: <>Typescript, because it's Typescript!</>,
+    tooltip: <>Typescript, for more robust and maintanable code.</>,
   },
   {
     id: 'tailwind',
